@@ -1,0 +1,434 @@
+/* general style  */
+body {
+  font-family: "Lato";
+  color: 111;
+  position: relative;
+  overflow-x: hidden;
+}
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+::selection {
+  background-color: #873fb5;
+  color: #ffffff;
+}
+strong {
+  font-weight: 900;
+}
+p {
+  line-height: 24px;
+  font-weight: 300px;
+}
+/* anchor */
+a,
+a:focus {
+  color: #873fb5;
+}
+a:hover {
+  color: #41135f;
+  text-decoration: none;
+}
+section {
+  padding: 30px 0;
+}
+hr {
+  width: 85px;
+}
+hr.icon::after {
+  content: "\f123";
+  font-family: "FontAwesome";
+  color: #873fb5;
+  font-size: 1.5em;
+  background-color: #ffffff;
+  top: -0.8em;
+  position: relative;
+  padding: 0.3em;
+}
+
+/* section heading  */
+.section-heading {
+  color: #873fb5;
+}
+.section-heading h3 {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.section-heading hr {
+  border-color: #873fb5;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* strart header  */
+#home {
+  background: url(../images/ground3.jpg) fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 600px;
+}
+.logo {
+  font-size: 72px;
+  font-weight: 100;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding: 0 20px 15px 20px;
+}
+#home h3 {
+  font-weight: 300;
+  margin: 0;
+}
+#home .learn-more {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+}
+#home .learn-more .fa {
+  position: absolute;
+}
+
+#home .learn-more .second-arrow {
+  top: 8px;
+}
+
+#home .learn-more .third-arrow {
+  top: 16px;
+}
+
+/* about  */
+#about {
+  background: url(../images/black-red.jpg) fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  background-size: cover;
+  color: #fff;
+  height: 440px;
+}
+#about h3 {
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+#about h4 {
+  font-weight: 300;
+  padding: 0 20%;
+}
+
+/* services */
+.service-item {
+  margin-bottom: 40px;
+}
+.service-item i {
+  font-size: 48px;
+  color: #c1c1c1;
+  float: left;
+  border-right: 1px solid #873fb5;
+  padding-right: 20px;
+}
+.service-title {
+  margin-top: -20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.service-title h3 {
+  color: #111;
+  font-weight: 900;
+}
+.service-title h4 {
+  font-weight: 300;
+  color: #873fb5;
+  margin-top: -10px;
+}
+
+/* skills */
+#skills {
+  background: url(../images/280873_red-and-black-wallpaper.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  background-size: cover;
+  color: #fff;
+  /* height: 440px; */
+}
+#skills h1 {
+  font-size: 48px;
+}
+#skills h3 {
+  font-weight: 300;
+  margin-top: 0;
+}
+#skills p {
+  margin: 40px 0;
+}
+.button {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+  padding-bottom: 10px;
+}
+.button:hover {
+  color: #873fb5;
+}
+#skills .button:last-child {
+  margin-left: 20px;
+}
+.progress {
+  height: 30px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  background-color: black;
+  box-shadow: none;
+  border-radius: 4px;
+}
+/* https://www.colorzilla.com/gradient-editor/ */
+.progress-bar {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#773a95+0,8d4563+100 */
+  background: #773a95; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #773a95 0%,
+    #8d4563 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #773a95 0%,
+    #8d4563 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #773a95 0%,
+    #8d4563 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#773a95', endColorstr='#8d4563',GradientType=1 ); /* IE6-9 */
+}
+.progress-bars h5 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* portofolio */
+#portofolio .col-md-4 {
+  padding: 0;
+}
+
+.portofolio-thumb,
+.portofolio-overlay {
+  height: 270px;
+  max-width: 390px;
+}
+#portofolio .portofolio-thumb img {
+  width: 100%;
+  height: 100%;
+}
+#portofolio .portofolio-thumb {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+#portofolio .portofolio-thumb .portofolio-overlay {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  background: rgba(135, 63, 181, 0.6);
+  padding: 20px 10px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s ease-in-out;
+}
+#portofolio .portofolio-thumb:hover .portofolio-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+#portofolio .portofolio-thumb .portofolio-overlay h2 {
+  color: #fff;
+  font-weight: 300;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding: 5px 10px 10px 10px;
+}
+#portofolio .portofolio-thumb .portofolio-overlay a {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.stat {
+  height: 230px;
+}
+.stat i {
+  font-size: 48px;
+}
+.stat h4 {
+  font-size: 300;
+}
+.codes {
+  background: url(../images/Red1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.projects {
+  background: url(../images/red3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.clients {
+  background: url(../images/red5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  opacity: 0.8;
+}
+.feedback {
+  background: url(../images/red2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* quotes  */
+#quotes {
+  background: url(../images/black-red.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 440px;
+  position: relative;
+  opacity: 0.9;
+}
+.owl-carousel h4 {
+  font-weight: 300;
+}
+.owl-carousel cite {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.owl-carousel img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.owl-carousel p {
+  font-weight: 300;
+}
+blockquote {
+  border-left: none;
+  margin: 0;
+}
+/* contact form  */
+.form-control {
+  height: 45px;
+  padding: 15px;
+  font-size: 16px;
+  color: #8c8c8c;
+  background-color: #f5f5f5;
+  border: 1px solid #d1d1d1;
+  box-shadow: none;
+  font-weight: 300;
+}
+.form-control:focus {
+  box-shadow: none;
+  color: #793a93;
+  border-color: #793a93;
+  background-color: #fff;
+}
+.form-control::placeholder {
+  color: #8c8c8c;
+}
+.form-control:focus::placeholder {
+  color: #793a93;
+}
+
+/* footer  */
+#footer {
+  background: url(../images/280873_red-and-black-wallpaper.jpg);
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  color: #fff;
+}
+#footer .logo {
+  font-size: 47px;
+  padding: 0 20px 10px 20px;
+}
+#footer ul {
+  padding-left: 0;
+  margin-top: 10px;
+  display: block;
+}
+#footer ul li {
+  display: inline-block;
+}
+#footer ul a {
+  font-size: 30px;
+  color: #fff;
+  padding: 0 10px;
+}
+.copyright {
+  background-color: black;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+/* media queries  */
+@media (min-width: 970px) and (max-width: 1170px) {
+  .service-item i {
+    float: none;
+    border: none;
+    display: block;
+  }
+  .service-item {
+    text-align: center;
+  }
+  .service-title {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 750px) {
+  body {
+    background-color: yellow;
+  }
+  .progress-bars {
+    margin-top: 30px;
+  }
+  .google-map {
+    margin-top: 20px;
+  }
+}
